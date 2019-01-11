@@ -6,8 +6,8 @@ tce-load -wil coreutils
 tce-load -wil ca-certificates
 tce-load -wil squashfs-tools
 
-wget -O vagrant-source.zip https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_linux_amd64.zip
-wget -O vagrant-sha256sums https://releases.hashicorp.com/vagrant/2.2.2/vagrant_2.2.2_SHA256SUMS
+wget -O vagrant-source.zip https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_linux_amd64.zip
+wget -O vagrant-sha256sums https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_SHA256SUMS
 
 valid=$(sha256sum vagrant-source.zip)
 checksum=$(grep "amd64" vagrant-sha256sums | awk '{print $1}')
