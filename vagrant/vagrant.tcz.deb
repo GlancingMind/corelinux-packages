@@ -1,3 +1,5 @@
 bash.tcz
 fuse.tcz
 glib2.tcz
+p11-kit.tcz
+libgpg-error.tcz
