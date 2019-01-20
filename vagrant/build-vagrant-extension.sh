@@ -2,9 +2,9 @@
 
 #Create a vagrant extension
 
-tce-load -wil coreutils
-tce-load -wil ca-certificates
-tce-load -wil squashfs-tools
+tce-load -wi coreutils
+tce-load -wi ca-certificates
+tce-load -wi squashfs-tools
 
 wget -O vagrant-source.zip https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_linux_amd64.zip
 wget -O vagrant-sha256sums https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_SHA256SUMS
