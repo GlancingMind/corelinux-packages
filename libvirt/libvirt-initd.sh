@@ -3,9 +3,9 @@
 
 case "$1" in
     start)
-        start-stop-daemon --start --exec /usr/local/etc/init.d/dbus
-        start-stop-daemon --start --exec /usr/local/etc/init.d/avahi
-        start-stop-daemon --start --exec dbus-launch libvirtd
+        start-stop-daemon --start --exec /usr/local/etc/init.d/dbus start
+        start-stop-daemon --start --exec /usr/local/etc/init.d/avahi start
+        start-stop-daemon --start --exec dbus-launch --exit-with-session libvirtd
         ;;
 
     stop)
